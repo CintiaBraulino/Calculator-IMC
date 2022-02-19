@@ -1,5 +1,6 @@
 import 'package:calculadora/pages/calculator_page/Controller/calculator_imc.dart';
 import 'package:calculadora/pages/calculator_page/Controller/reset_fields.dart';
+import 'package:calculadora/pages/calculator_page/widgets/custom_sizedBox.dart';
 import 'package:flutter/material.dart';
 
 class CalculatorPage extends StatefulWidget {
@@ -48,27 +49,13 @@ class _CalculatorPageState extends State<CalculatorPage> {
               const SizedBox(
                 height: 47,
               ),
-              SizedBox(
-                width: 300,
-                height: 50,
-                child: TextField(
-                  controller: weightController,
-                  keyboardType: TextInputType.number,
-                  decoration: const InputDecoration(hintText: 'Peso (Kg)'),
-                ),
-              ),
+              CustomSizedBox(
+                  controller: weightController, hintText: 'Peso (Kg)'),
               const SizedBox(
                 height: 30,
               ),
-              SizedBox(
-                width: 300,
-                height: 50,
-                child: TextField(
-                  controller: heightController,
-                  keyboardType: TextInputType.number,
-                  decoration: const InputDecoration(hintText: 'Altura (cm)'),
-                ),
-              ),
+              CustomSizedBox(
+                  controller: heightController, hintText: 'Altura (cm)'),
               const SizedBox(
                 height: 33.5,
               ),

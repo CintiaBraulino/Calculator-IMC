@@ -12,7 +12,7 @@ class CustomTextFieldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 300,
       height: 50,
       child: TextField(
